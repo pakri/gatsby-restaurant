@@ -3,11 +3,11 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-const IndexPage = () => (
+const AboutPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h3>Home Page</h3>
+    <h3>About Page</h3>
   </Layout>
 );
 
-export default IndexPage;
+export default AboutPage;

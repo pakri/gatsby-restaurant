@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 :root {
-  --mainOrange:rgb(255, 94, 0);
+  --mainOrange: rgb(255, 94, 0);
   --mainYellow: #d2aa5c;
 }
 body {
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   color: black;
   background: white;
 }

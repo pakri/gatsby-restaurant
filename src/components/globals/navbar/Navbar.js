@@ -29,4 +29,4 @@ const NavWrapper = styled.nav`
     display: flex;
     align-items: center;
   }
-`
+`;

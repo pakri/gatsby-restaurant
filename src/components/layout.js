@@ -1,22 +1,21 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import {createGlobalStyle} from 'styled-components'
-import Navbar from '../components/globals/navbar'
+import React from "react";
+import PropTypes from "prop-types";
+import { createGlobalStyle } from "styled-components";
+import Navbar from "../components/globals/navbar";
 
 // import './bootstrap.min.css'
 // import './layout.css'
 // import '../sass/layout.scss'
 
-
 const Layout = ({ children }) => {
-  return(
+  return (
     <React.Fragment>
-      <GlobalStyle/>
+      <GlobalStyle />
       <Navbar />
       {children}
     </React.Fragment>
-  )
-}
+  );
+};
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -29,10 +28,10 @@ body{
   color: #262626;
   background: #fff;
 }
-`
+`;
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;

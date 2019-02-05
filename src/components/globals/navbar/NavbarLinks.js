@@ -8,7 +8,7 @@ export default class NavbarLinks extends Component {
     links: [
       {
         id: 0,
-        path: "/",
+        path: "/home",
         name: "home"
       },
       {
@@ -51,13 +51,13 @@ const LinkWrapper = styled.ul`
     list-style-type: none;
   }
   .nav-link {
-    display: block;
-    text-decoration: none;
-    padding: 0.5rem 1rem 0.5rem 1rem;
     color: ${styles.colors.mainGrey};
-    font-weight: 700;
-    text-transform: capitalize;
     curser: pointer;
+    display: block;
+    font-weight: 700;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-transform: capitalize;
+    text-decoration: none;
     ${styles.transDefault};
     &:hover {
       background: ${styles.colors.mainGrey};
@@ -65,16 +65,16 @@ const LinkWrapper = styled.ul`
       padding: 0.5rem 1rem 0.5rem 1.3rem;
     }
   }
-  height: ${props => (props.open ? '152px' : '0px')};
+  height: ${props => (props.open ? "152px" : "0px")};
   overflow: hidden;
-  ${styles.transObject({ time: '1s' })};
+  ${styles.transObject({ time: "0.45s" })};
   @media (min-width: 768px) {
-    height: auto;
     display: flex;
+    height: auto;
     margin: 0 auto;
     .nav-link:hover {
       background: ${styles.colors.mainWhite};
       padding: 0.5rem 1rem 0.5rem 1rem;
     }
   }
-`
+`;
